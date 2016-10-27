@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RadioButtonTipCalculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bill_amount">Enter Bill Amount</string>
+    <string name="tip_amount">The amount to tip is: </string>
+    <string name="fifteen">15%</string>
+</resources>

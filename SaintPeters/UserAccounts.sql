@@ -1,7 +1,14 @@
-﻿CREATE TABLE [dbo].[UserAccounts]
+﻿CREATE TABLE [dbo].[UserAccounts2]
 (
-	[Id] NVARCHAR(128) NOT NULL PRIMARY KEY, 
-    [Name] NVARCHAR(15) NOT NULL, 
-    [Surname] NVARCHAR(15) NOT NULL, 
-    [Email] VARCHAR(60) NOT NULL
+	[Id] nvarchar(128) NOT NULL PRIMARY KEY, 
+    [Email] NVARCHAR(256) NULL, 
+    [EmailConfirmed] BIT NOT NULL, 
+    [PasswordHash] NVARCHAR(MAX) NULL, 
+    [SecurityStamp] NVARCHAR(MAX) NULL, 
+    [TwoFactorEnabled] BIT NOT NULL, 
+    [LockoutEndDataUtc] DATETIME NULL, 
+    [LockouEnabled] BIT NOT NULL, 
+    [AccessFailedCount] INT NOT NULL, 
+    [UserName] NVARCHAR(256) NOT NULL
+
 )
